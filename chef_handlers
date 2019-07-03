@@ -1,0 +1,69 @@
+
+
+
+Handlers and Description
+
+
+Airbrake
+A handler that sends exceptions (only) to Airbrake, an application that collects data and aggregates it for review.
+
+Asynchronous Resources
+A handler that asynchronously pushes exception and report handler data to a STOMP queue, from which data can be processed into data storage.
+
+Campfire
+A handler that collects exception and report handler data and reports it to Campfire, a web-based group chat tool.
+
+Datadog
+A handler that collects Chef Infra Client stats and sends them into a DATADOG newsfeed.
+
+Flowdock
+A handler that collects exception and report handler data and sends it to users via the Flowdock API..
+
+Graphite
+A handler that collects exception and report handler data and reports it to Graphite, a graphic rendering application.
+
+Graylog2 GELF
+A handler that provides exception and report handler status (including changes) to a Graylog2 server, so that the data can be viewed using Graylog Extended Log Format (GELF).
+
+Growl
+A handler that collects exception and report handler data and then sends it as a Growl notification.
+
+HipChat
+A handler that collects exception handler data and sends it to HipChat, a hosted private chat service for companies and teams.
+
+IRC Snitch
+A handler that notifies administrators (via Internet Relay Chat (IRC)) when a Chef Infra Client run fails.
+
+Journald
+A handler that logs an entry to the systemd journal with the Chef Infra Client run status, exception details, configurable priority, and custom details.
+
+
+
+
+
+net/http
+A handler that reports the status of a Chef run to any API via net/HTTP.
+
+Simple Email
+A handler that collects exception and report handler data and then uses pony to send email reports that are based on Erubis templates.
+
+SendGrid Mail Handler
+A chef handler that collects exception and report handler data and then uses SendGrid Ruby gem to send email reports that are based on Erubis templates.
+
+SNS
+A handler that notifies exception and report handler data and sends it to a SNS topic.
+
+Slack
+A handler to send Chef Infra Client run notifications to a Slack channel.
+
+Splunk Storm
+A handler that supports exceptions and reports for Splunk Storm.
+
+Syslog
+A handler that logs basic essential information, such as about the success or failure of a Chef Infra Client run.
+
+Updated Resources
+A handler that provides a simple way to display resources that were updated during a Chef Infra Client run.
+
+ZooKeeper
+A Chef report handler to send Chef run notifications to ZooKeeper.
